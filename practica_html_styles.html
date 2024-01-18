@@ -1,0 +1,135 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Actividad 25</title>
+  <meta name="author" content="Jorge V">
+  <meta name="keywords" content="HTML, css, PILARES, edc">
+  <meta name="description" content="Práctica de actividad 12.">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
+  <meta charset="UFT-8">
+  <style>
+    * {
+      font-family: cambria;
+    }
+
+    html {
+      background-color: turquoise;
+    }
+
+    header {
+      background-color: #302c2f;
+      color: #34ebae;
+      width: 97.6%;
+      height: 11em;
+      margin: 1em;
+      text-align: center;
+      display: grid;
+      grid-template:
+        "header1"5em "nav1".5em;
+      grid-gap: 1em;
+    }
+
+    h1 {
+      padding: .5em;
+      grid-area: header1;
+      font-weight: 200;
+      letter-spacing:2px;
+      text-transform: uppercase;
+      text-shadow: 1px 1px 2px #34ebae;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #34ebae;
+      margin: .3em;
+      padding: 1em;
+      font-size: 1.5em;
+      grid-template: nav1;
+      height: .70em;
+    }
+
+    a {
+      color: #302c2f;
+      padding: 2.7em;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+
+    main {
+      background-color: #a3e3f0;
+      display: grid;
+      grid-template:
+        "cuerpo aparte"100% / 75% 25%;
+      height: auto;
+      margin: 1em;
+    }
+
+    article {
+      padding: 1em;
+      grid-area: cuerpo;
+      background-color: #3e9de6;
+      margin: 1em;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2em;
+      padding: 1em 1em 0.5em 1em;
+      text-shadow: 1px 1px 2px black;
+      font-weight: 200;
+      letter-spacing:2px;
+    }
+
+    aside {
+      grid-area: aparte;
+      background-color: #d62d98;
+      margin: 1em;
+      text-align: center;
+      padding: 1em;
+    }
+
+    footer {
+      background-color: yellow;
+      margin: 1em;
+      height: 2.5em;
+      text-align: center;
+      padding: 2em;
+      font-size: 1.3em;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1 style=>Encabezado nivel 1</h1>
+    <nav>
+      <a href="#">Enlace 1</a>
+      <a href="#">Enlace 2</a>
+      <a href="#">Enlace 3</a>
+      <a href="#">Enlace 4</a>
+    </nav>
+  </header>
+  <main>
+    <article>
+      <h2>Encabezado nivel 2</h2>
+      <p>Aquí va texto del primer <b>párrafo</b></p>
+      <p>Aquí va texto del segundo párrafo</p>
+    </article>
+    <aside>
+      <h2>Apartado</h2>
+      <form>
+        <p><label for="form_check">Elige una opción</label></p>
+        <p><input type="checkbox" name="form_check" value="cantar">Opción 1</p>
+        <p><input type="checkbox" name="form_check" value="futbol">Opción 2</p>
+        <p><input type="checkbox" name="form_check" value="leer">Opción 3</p>
+        <p><input type="submit" value="Enviar"></p>
+      </form>
+    </aside>
+  </main>
+  <footer>
+    <p>Sección de información de contacto, derechos de autor, etc.</p>
+  </footer>
+</body>
+
+</html>
